@@ -43,6 +43,20 @@ class ViewController: UIViewController {
         }
     }
     
+    private var savedProgram: CalculatorAPI.PropertyList?
+    
+    @IBAction func save(_ sender: UIButton) {
+        savedProgram = calculatorAPI.program
+    }
+    
+    @IBAction func restore(_ sender: UIButton) {
+        if savedProgram != nil
+        {
+            calculatorAPI.program = savedProgram!
+            display = calculatorAPI.result
+        }
+    }
+    
     private var calculatorAPI = CalculatorAPI()
     
     @IBAction private func performOperation(_ sender: UIButton) {

@@ -11,9 +11,11 @@ import Foundation
 class CalculatorAPI
 {
     private var accumulator = 0.0
+    private var internalProgram = [AnyObject]()
     
     func setOperand(_ operand:Double)
     {
+        internalProgram.append(operand as AnyObject)
         accumulator = operand
     }
     
@@ -27,6 +29,7 @@ class CalculatorAPI
     
     func performOperation(_ symbol: String)
     {
+        internalProgram.append(symbol as AnyObject)
         if let operation = operations[symbol]{
             switch operation {
             case .Constant(let associatedValue):
@@ -76,6 +79,41 @@ class CalculatorAPI
         {
         get{
             return accumulator
+        }
+    }
+    
+    private func clear()
+    {
+        accumulator = 0.0
+        pending = nil
+        internalProgram.removeAll()
+    }
+    
+    typealias PropertyList = AnyObject
+    
+    var program : PropertyList
+        {
+        get
+        {
+            return internalProgram as CalculatorAPI.PropertyList
+        }
+        
+        set
+        {
+            clear()
+            if let arrayofops = newValue as? [AnyObject]
+            {
+                for ops in arrayofops
+                {
+                    if let operand = ops as? Double{
+                        setOperand(operand)
+                    }
+                    
+                    else if let operand = ops as? String{
+                        performOperation(operand)
+                    }
+                }
+            }
         }
     }
 }
