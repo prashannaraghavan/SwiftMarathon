@@ -104,7 +104,7 @@ class WWDC
         if winners.count > max {
             for _ in 0..<max
             {
-                let rand = Int(arc4random_uniform(100))
+                let rand = Int(arc4random_uniform(UInt32(Int(winners.count))))
                 list.append(winners[rand])
             }
             
@@ -132,4 +132,63 @@ for i in 0..<50
 }
 print("The winners are \(WWDCC.finalList().joined(separator: " "))")
 
+
+var str = "String"
+var charArr = Array(str.characters)
+print(charArr)
+
+let greeting = "Guten Tag!"
+print(greeting[greeting.startIndex])
+// G
+print(greeting[greeting.index(before: greeting.endIndex)])
+// !
+print(greeting[greeting.index(after: greeting.startIndex)])
+// u
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+print(greeting[index])
+// a
+
+var welcome = "hello"
+welcome.insert("!", at: welcome.endIndex)
+// welcome now equals "hello!"
+
+//welcome.insert(contentsOf: " there", at: welcome.index(before: welcome.endIndex))
+// welcome now equals "hello there!"
+
+let houseAnimals: Set = ["🐶", "🐱"]
+let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+let cityAnimals: Set = ["🐦", "🐭"]
+
+print(houseAnimals.isSubset(of: farmAnimals) ? "Yes" : "No")
+// true
+print(farmAnimals.isSuperset(of: houseAnimals) ? "Yes" : "No")
+// true
+print(farmAnimals.isDisjoint(with: cityAnimals) ? "Yes" : "No")
+// true
+print(farmAnimals.isStrictSuperset(of: houseAnimals) ? "Yes" : "No")
+
+let base = 2
+let power = 10
+var answer = 1
+for _ in 1...power {
+    answer *= base
+}
+print("\(base) to the power of \(power) is \(answer)")
+// Prints "3 to the power of 10 is 59049"
+
+let minutes = 60
+for tickMark in 0..<minutes {
+    // render the tick mark each minute (60 times)
+}
+
+let minuteInterval = 5
+for tickMark in stride(from: 0, to: minutes, by: minuteInterval) {
+    // render the tick mark every 5 minutes (0, 5, 10, 15 ... 45, 50, 55)
+}
+
+let hours = 12
+let hourInterval = 3
+for tickMark in stride(from: 3, through: hours, by: hourInterval) {
+    // render the tick mark every 3 hours (3, 6, 9, 12)
+}
 
