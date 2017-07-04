@@ -9,7 +9,7 @@
 import Foundation
 
 print("Hello, World!")
-var array = ["one","two","three","four"]
+var array = ["one","two","three","four","five"]
 var newArray = array.sorted(by: { (s1: String,s2: String) -> Bool in
     return s1>s2 })
 print(newArray)
@@ -148,6 +148,22 @@ func serve(customer cust: @autoclosure () -> String)
 serve(customer: array.remove(at: 0) )
 
 
+var comp: [()->String] = []
+
+func serving(customer cust: @escaping @autoclosure () -> String)
+{
+    comp.append(cust)
+}
+
+serving(customer: array.remove(at: 0) )
+serving(customer: array.remove(at: 0) )
+
+print(array.count)
+
+for functions in comp
+{
+    print("Now Serving \(functions())")
+}
 
 
 
