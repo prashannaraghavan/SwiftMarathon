@@ -181,7 +181,7 @@ assertBoolean(actual: parkingSystem.vehicleExit(licenseNumber: vehicleTwo), expe
 // Vehicle two checkout
 let fiveHours = thirtyMinutesLater.addingTimeInterval(60*60*5)
 let rev2 = parkingSystem.vehicleCheckout(licenseNumber: vehicleTwo, outTime: fiveHours)
-// assert(actual: rev2, expected: 0) --> What should we expect?
+assert(actual: rev2, expected: 10)
 
 // Vehicle two leaving the parking lot
 assertBoolean(actual: parkingSystem.vehicleExit(licenseNumber: vehicleTwo), expected: true)
