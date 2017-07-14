@@ -29,8 +29,6 @@ class SelfNode
     
     init(_ no:Int) {
         item = no
-        prev = self
-        next = self
     }
 }
 
@@ -179,6 +177,8 @@ class CircularLinkedList
         node.next = oldhead
         oldhead?.prev = node
         head = node
+        head?.prev = tail
+        tail?.next = head
         length += 1
     }
     
@@ -194,6 +194,8 @@ class CircularLinkedList
         oldtail?.next = node
         node.prev = oldtail
         tail = node
+        head?.prev = tail
+        tail?.next = head
         length += 1
     }
     
@@ -278,4 +280,7 @@ cll.addLast(8)
 cll.addAt(1, 3)
 print(cll.show())
 print(cll.showReverse())
+print((cll.tail?.next === cll.head) ? "Yes" : "No")
+print((cll.head?.prev === cll.tail) ? "Yes" : "No")
+print(cll.head?.prev?.item)
 
