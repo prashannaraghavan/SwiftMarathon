@@ -282,5 +282,5 @@ print(cll.show())
 print(cll.showReverse())
 print((cll.tail?.next === cll.head) ? "Yes" : "No")
 print((cll.head?.prev === cll.tail) ? "Yes" : "No")
-print(cll.head?.prev?.item)
+print((cll.head?.prev?.item)!)
 
