@@ -44,7 +44,20 @@ print(ll.display())
 ll.head = ll.reverseInGroups(ll.head, 3)
 print(ll.display())
 
+var left = LinkedList()
+for i in stride(from: 1, through: 9, by: 2)
+{
+    left.addFirst(i)
+}
 
+var right = LinkedList()
+for i in stride(from: 0, through: 8, by: 2)
+{
+    right.addFirst(i)
+}
 
+var headObj = left.add(left.head!, right.head!)
+print(left.display(headObj))
 
-
+ll.rotate(ll.head, 4)
+print(ll.display())

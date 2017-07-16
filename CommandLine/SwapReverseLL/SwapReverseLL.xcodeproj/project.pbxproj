@@ -10,6 +10,7 @@
 		241EC7DB1F19C90E00CD7426 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241EC7DA1F19C90E00CD7426 /* main.swift */; };
 		249DCF761F1AEFE100BA2FD6 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DCF751F1AEFE100BA2FD6 /* LinkedList.swift */; };
 		249DCF781F1AF06E00BA2FD6 /* SwapReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DCF771F1AF06E00BA2FD6 /* SwapReverse.swift */; };
+		249DCF7A1F1AF29E00BA2FD6 /* AddRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249DCF791F1AF29E00BA2FD6 /* AddRotate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		241EC7DA1F19C90E00CD7426 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		249DCF751F1AEFE100BA2FD6 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = ../LinkedList.swift; sourceTree = "<group>"; };
 		249DCF771F1AF06E00BA2FD6 /* SwapReverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapReverse.swift; sourceTree = "<group>"; };
+		249DCF791F1AF29E00BA2FD6 /* AddRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRotate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				249DCF751F1AEFE100BA2FD6 /* LinkedList.swift */,
 				249DCF771F1AF06E00BA2FD6 /* SwapReverse.swift */,
 				241EC7DA1F19C90E00CD7426 /* main.swift */,
+				249DCF791F1AF29E00BA2FD6 /* AddRotate.swift */,
 			);
 			path = SwapReverseLL;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				249DCF761F1AEFE100BA2FD6 /* LinkedList.swift in Sources */,
 				241EC7DB1F19C90E00CD7426 /* main.swift in Sources */,
+				249DCF7A1F1AF29E00BA2FD6 /* AddRotate.swift in Sources */,
 				249DCF781F1AF06E00BA2FD6 /* SwapReverse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
