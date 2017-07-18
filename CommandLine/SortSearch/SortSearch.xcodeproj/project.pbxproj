@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2473A8561F0EE1E4009DB63E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473A8551F0EE1E4009DB63E /* main.swift */; };
 		2473A85D1F0EE94C009DB63E /* quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2473A85C1F0EE94C009DB63E /* quick.swift */; };
+		24D17D161F1D90140003875E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D17D151F1D90140003875E /* BinarySearch.swift */; };
+		24D17D181F1D901E0003875E /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D17D171F1D901E0003875E /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		2473A8521F0EE1E4009DB63E /* SortSearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortSearch; sourceTree = BUILT_PRODUCTS_DIR; };
 		2473A8551F0EE1E4009DB63E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2473A85C1F0EE94C009DB63E /* quick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quick.swift; sourceTree = "<group>"; };
+		24D17D151F1D90140003875E /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		24D17D171F1D901E0003875E /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				2473A8551F0EE1E4009DB63E /* main.swift */,
 				2473A85C1F0EE94C009DB63E /* quick.swift */,
+				24D17D151F1D90140003875E /* BinarySearch.swift */,
+				24D17D171F1D901E0003875E /* MergeSort.swift */,
 			);
 			path = SortSearch;
 			sourceTree = "<group>";
@@ -126,6 +132,8 @@
 			files = (
 				2473A8561F0EE1E4009DB63E /* main.swift in Sources */,
 				2473A85D1F0EE94C009DB63E /* quick.swift in Sources */,
+				24D17D181F1D901E0003875E /* MergeSort.swift in Sources */,
+				24D17D161F1D90140003875E /* BinarySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +267,7 @@
 				2473A85B1F0EE1E4009DB63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
