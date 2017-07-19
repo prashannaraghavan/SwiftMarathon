@@ -29,3 +29,10 @@ var x = dist.edit(Array(fname.characters),Array(lname.characters), fname.charact
 print("Edit Distance : \(x)")
 var y = dist.editDt(Array(fname.characters),Array(lname.characters), fname.characters.count, lname.characters.count)
 print("Edit Distance : \(y)")
+
+var cost = [[1,2,3],[4,5,6],[7,8,9]]
+var mincost = MinCost(3,3)
+var z = mincost.cost(cost, 2, 2)
+print("Min cost to reach the dest is \(z)")
+var w = mincost.getMinCost(cost, 2, 2)
+print("Min cost to reach the dest is \(w)")
