@@ -20,7 +20,15 @@ let power = 2
 let coeff = binomialCoefficient.getCoefficient(x, power)
 print("Binomial Coefficient is : \(coeff)")
 
-var max = MaxSum()
+var maxi = MaxSum()
 let arr = [1, 101, 2, 3, 100, 4, 5]
-let y = max.maxSum(arr)
+let y = maxi.maxSum(arr)
 print("Max sum is \(y)")
+
+var egg = EggDrop()
+let trials = egg.minimumTrails(2, 10)
+print("Minimum Number of trials is \(trials)")
+var lps = LongPalindromeSubsequence()
+var str = "geeksforgeeks"
+let maxlps = lps.lps(str, 0, str.characters.count-1)
+print("The longest palindrome subsequence is : \(maxlps)")

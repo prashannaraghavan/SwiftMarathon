@@ -16,7 +16,7 @@ class MaxSum
         for i in 1..<arr.count
         {
             for j in 0...i{
-                if sum[j] < sum[i] && sum[i] < sum[j] + arr[i] {
+                if arr[j] < arr[i] && sum[i] < sum[j] + arr[i] {
                     sum[i] = sum[j] + arr[i]
                 }
             }

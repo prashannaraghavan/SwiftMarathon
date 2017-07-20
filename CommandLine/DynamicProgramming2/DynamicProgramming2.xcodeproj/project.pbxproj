@@ -11,6 +11,8 @@
 		24A9DAE21F203CCB005BE623 /* CoinChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAE11F203CCB005BE623 /* CoinChange.swift */; };
 		24A9DAE41F203CDA005BE623 /* MaxSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAE31F203CDA005BE623 /* MaxSum.swift */; };
 		24A9DAE61F203CE7005BE623 /* BinomialCooeficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAE51F203CE7005BE623 /* BinomialCooeficient.swift */; };
+		24A9DAE81F2044A8005BE623 /* EggDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAE71F2044A8005BE623 /* EggDrop.swift */; };
+		24A9DAEA1F2047C5005BE623 /* LongPalindromeSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAE91F2047C5005BE623 /* LongPalindromeSubsequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		24A9DAE11F203CCB005BE623 /* CoinChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinChange.swift; sourceTree = "<group>"; };
 		24A9DAE31F203CDA005BE623 /* MaxSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxSum.swift; sourceTree = "<group>"; };
 		24A9DAE51F203CE7005BE623 /* BinomialCooeficient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinomialCooeficient.swift; sourceTree = "<group>"; };
+		24A9DAE71F2044A8005BE623 /* EggDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggDrop.swift; sourceTree = "<group>"; };
+		24A9DAE91F2047C5005BE623 /* LongPalindromeSubsequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPalindromeSubsequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				241B77EC1F1F1A9100FADAFD /* main.swift */,
+				24A9DAE91F2047C5005BE623 /* LongPalindromeSubsequence.swift */,
 				24A9DAE11F203CCB005BE623 /* CoinChange.swift */,
 				24A9DAE31F203CDA005BE623 /* MaxSum.swift */,
 				24A9DAE51F203CE7005BE623 /* BinomialCooeficient.swift */,
+				24A9DAE71F2044A8005BE623 /* EggDrop.swift */,
 			);
 			path = DynamicProgramming2;
 			sourceTree = "<group>";
@@ -130,7 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A9DAE81F2044A8005BE623 /* EggDrop.swift in Sources */,
 				24A9DAE21F203CCB005BE623 /* CoinChange.swift in Sources */,
+				24A9DAEA1F2047C5005BE623 /* LongPalindromeSubsequence.swift in Sources */,
 				24A9DAE41F203CDA005BE623 /* MaxSum.swift in Sources */,
 				241B77ED1F1F1A9100FADAFD /* main.swift in Sources */,
 				24A9DAE61F203CE7005BE623 /* BinomialCooeficient.swift in Sources */,
