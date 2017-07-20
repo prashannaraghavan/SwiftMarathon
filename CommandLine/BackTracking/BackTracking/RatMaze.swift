@@ -48,7 +48,10 @@ class RatMaze{
         var soln = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
         var x = 0, y = 0
         print(solveMaze(maze,&soln,&x,&y) ? "Solution available" : "Solution not available")
-        print(soln)
+        for i in soln
+        {
+            print(i)
+        }
     }
 }
 

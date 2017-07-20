@@ -10,6 +10,8 @@
 		24A9DAF81F204990005BE623 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAF71F204990005BE623 /* main.swift */; };
 		24A9DAFF1F204BF6005BE623 /* Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DAFE1F204BF6005BE623 /* Permutation.swift */; };
 		24A9DB011F2055BD005BE623 /* RatMaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB001F2055BD005BE623 /* RatMaze.swift */; };
+		24A9DB031F205D8C005BE623 /* NQueen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB021F205D8C005BE623 /* NQueen.swift */; };
+		24A9DB051F207155005BE623 /* KnightTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB041F207155005BE623 /* KnightTour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,8 @@
 		24A9DAF71F204990005BE623 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		24A9DAFE1F204BF6005BE623 /* Permutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permutation.swift; sourceTree = "<group>"; };
 		24A9DB001F2055BD005BE623 /* RatMaze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatMaze.swift; sourceTree = "<group>"; };
+		24A9DB021F205D8C005BE623 /* NQueen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
+		24A9DB041F207155005BE623 /* KnightTour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnightTour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				24A9DAF71F204990005BE623 /* main.swift */,
 				24A9DAFE1F204BF6005BE623 /* Permutation.swift */,
 				24A9DB001F2055BD005BE623 /* RatMaze.swift */,
+				24A9DB021F205D8C005BE623 /* NQueen.swift */,
+				24A9DB041F207155005BE623 /* KnightTour.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 				24A9DAFF1F204BF6005BE623 /* Permutation.swift in Sources */,
 				24A9DB011F2055BD005BE623 /* RatMaze.swift in Sources */,
 				24A9DAF81F204990005BE623 /* main.swift in Sources */,
+				24A9DB051F207155005BE623 /* KnightTour.swift in Sources */,
+				24A9DB031F205D8C005BE623 /* NQueen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
