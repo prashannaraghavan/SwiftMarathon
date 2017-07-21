@@ -14,12 +14,12 @@ class KnightTour
     let R = 8
     
     /* anti-clockwise fastest*/
-//    let moveX = [2, 1, -1, -2, -2, -1,  1,  2]
-//    let moveY = [1, 2,  2,  1, -1, -2, -2, -1]
+    let moveX = [2, 1, -1, -2, -2, -1,  1,  2]
+    let moveY = [1, 2,  2,  1, -1, -2, -2, -1]
     
     /* clockwise reasonable*/
-    let moveX = [2,1,-1,-2,-2,-1,1,2]
-    let moveY = [-1,-2,-2,-1,1,2,2,1]
+//    let moveX = [2,1,-1,-2,-2,-1,1,2]
+//    let moveY = [-1,-2,-2,-1,1,2,2,1]
     
     func isSafe(_ tour:[[Int]],_ nextX:Int,_ nextY:Int) -> Bool
     {

@@ -12,6 +12,7 @@
 		24A9DB011F2055BD005BE623 /* RatMaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB001F2055BD005BE623 /* RatMaze.swift */; };
 		24A9DB031F205D8C005BE623 /* NQueen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB021F205D8C005BE623 /* NQueen.swift */; };
 		24A9DB051F207155005BE623 /* KnightTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A9DB041F207155005BE623 /* KnightTour.swift */; };
+		24D763BB1F21898100C1A3A7 /* Sudoku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D763BA1F21898100C1A3A7 /* Sudoku.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		24A9DB001F2055BD005BE623 /* RatMaze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatMaze.swift; sourceTree = "<group>"; };
 		24A9DB021F205D8C005BE623 /* NQueen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
 		24A9DB041F207155005BE623 /* KnightTour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnightTour.swift; sourceTree = "<group>"; };
+		24D763BA1F21898100C1A3A7 /* Sudoku.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sudoku.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				24A9DB001F2055BD005BE623 /* RatMaze.swift */,
 				24A9DB021F205D8C005BE623 /* NQueen.swift */,
 				24A9DB041F207155005BE623 /* KnightTour.swift */,
+				24D763BA1F21898100C1A3A7 /* Sudoku.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			files = (
 				24A9DAFF1F204BF6005BE623 /* Permutation.swift in Sources */,
 				24A9DB011F2055BD005BE623 /* RatMaze.swift in Sources */,
+				24D763BB1F21898100C1A3A7 /* Sudoku.swift in Sources */,
 				24A9DAF81F204990005BE623 /* main.swift in Sources */,
 				24A9DB051F207155005BE623 /* KnightTour.swift in Sources */,
 				24A9DB031F205D8C005BE623 /* NQueen.swift in Sources */,
@@ -271,6 +275,7 @@
 				24A9DAFD1F204990005BE623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
