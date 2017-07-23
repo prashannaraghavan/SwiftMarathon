@@ -8,29 +8,10 @@
 
 import Foundation
 
-class Power
-{
-    func calc(_ x:Int,_ power:Int) -> Double{
-        if power == 0
-        {
-            return 1
-        }
-        
-        let temp = calc(x, power/2)
-        
-        if(power%2 == 0)
-        {
-            return temp*temp
-        }
-        
-        if power > 0 {
-            return Double(x)*temp*temp
-        }
-        
-        return (temp*temp)/Double(x)
-    }
-}
-
 var power = Power()
 let x = power.calc(2, -2)
 print(x)
+
+var find = Median()
+let median = find.findMedian([1, 12, 15, 26, 38], [2, 13, 17, 30, 45], 5)
+print("Median is \(median)")
