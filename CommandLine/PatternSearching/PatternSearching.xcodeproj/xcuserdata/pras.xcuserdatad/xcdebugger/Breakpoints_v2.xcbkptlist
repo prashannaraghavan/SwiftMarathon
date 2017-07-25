@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PatternSearching/main.swift"
-            timestampString = "522643126.929946"
+            timestampString = "522699235.176693"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "find(string:pattern:prime:)"
             landmarkType = "7">
          </BreakpointContent>

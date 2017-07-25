@@ -63,7 +63,8 @@ class RobinKarp
                 var y = 0
                 while y < m
                 {
-                    if string[x+y] != pattern[y] {
+                    let w = x+y
+                    if string[w] != pattern[y] {
                         break
                     }
                     y += 1
@@ -75,10 +76,47 @@ class RobinKarp
             }
             
             if x < n-m {
-                p = (hash*(p - Int(string[x].unicodeScalarCodePoint())*h) + Int(string[x+m].unicodeScalarCodePoint())) % prime
+                let z = x+m
+                p = (hash*(p - h*Int(string[x].unicodeScalarCodePoint())) + Int(string[z].unicodeScalarCodePoint())) % prime
                 
                 if p < 0 {
                     p = p + prime
+                }
+            }
+            
+            x += 1
+        }
+    }
+    
+    func findIndices(string: String,pattern: String) -> Void
+    {
+        let n = string.characters.count
+        let m = pattern.characters.count
+        
+        let prange = pattern.index(pattern.startIndex, offsetBy: 0)..<pattern.index(pattern.startIndex, offsetBy: m)
+        let psub = pattern.substring(with: prange)
+        
+        let str = Array(string.characters)
+        let pat = Array(pattern.characters)
+        
+        var x = 0
+        while x <= n-m {
+            let srange = string.index(string.startIndex, offsetBy: x)..<string.index(string.startIndex, offsetBy: x+m)
+            let ssub = string.substring(with: srange)
+
+            if psub.hashValue == ssub.hashValue {
+                var y = 0
+                while y < m
+                {
+                    let w = x+y
+                    if str[w] != pat[y] {
+                        break
+                    }
+                    y += 1
+                }
+                
+                if y == m {
+                    print("Found pattern \(String(pat)) at index \(x)")
                 }
             }
             
@@ -90,4 +128,5 @@ class RobinKarp
 var rk = RobinKarp()
 let str1 = "SHAWSHANK"
 let pat1 = "SHA"
-rk.find(string: Array(str1.characters), pattern: Array(pat1.characters),prime: 101)
+//rk.find(string: Array(str1.characters), pattern: Array(pat1.characters),prime: 101)
+rk.findIndices(string: str1, pattern: pat1)
