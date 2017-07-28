@@ -8,19 +8,23 @@
 
 import Foundation
 
-protocol DoProtocol {
+protocol DoProtocol: class {
     func vehicleType() -> String
     func vehicleSpeed() -> String
 }
 
 class ProtocolClass {
     
-    var delegate:DoProtocol?
+    weak var delegate:DoProtocol?
     
     init(with:DoProtocol) {
         delegate = with
         self.triggerFunc()
         self.speedFunc()
+    }
+    
+    deinit {
+        print("Deinit called from ProtocolClass")
     }
     
     func triggerFunc() -> Void {
@@ -40,10 +44,14 @@ class ProtocolClass {
 
 class DelegateClass:DoProtocol {
     
-    var pro:ProtocolClass?
+    weak var pro:ProtocolClass?
     
     init() {
         pro = ProtocolClass(with: self)
+    }
+    
+    deinit {
+        print("Deinit called from DelegateClass")
     }
     
     func vehicleSpeed() -> String {
@@ -57,5 +65,6 @@ class DelegateClass:DoProtocol {
     }
 }
 
-var delegateObject = DelegateClass()
-
+var delegateObject:DelegateClass?
+delegateObject = DelegateClass()
+delegateObject = nil
