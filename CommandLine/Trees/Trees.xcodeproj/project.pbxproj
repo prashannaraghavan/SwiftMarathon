@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		24818F871F31649B00920673 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24818F861F31649B00920673 /* main.swift */; };
-		24818F8E1F316E4100920673 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24818F8D1F316E4100920673 /* Tree.swift */; };
-		24818F901F31716300920673 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24818F8F1F31716300920673 /* Level.swift */; };
+		24818F8E1F316E4100920673 /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24818F8D1F316E4100920673 /* DFS.swift */; };
+		24818F901F31716300920673 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24818F8F1F31716300920673 /* BFS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		24818F831F31649A00920673 /* Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trees; sourceTree = BUILT_PRODUCTS_DIR; };
 		24818F861F31649B00920673 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		24818F8D1F316E4100920673 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		24818F8F1F31716300920673 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		24818F8D1F316E4100920673 /* DFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
+		24818F8F1F31716300920673 /* BFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				24818F861F31649B00920673 /* main.swift */,
-				24818F8D1F316E4100920673 /* Tree.swift */,
-				24818F8F1F31716300920673 /* Level.swift */,
+				24818F8D1F316E4100920673 /* DFS.swift */,
+				24818F8F1F31716300920673 /* BFS.swift */,
 			);
 			path = Trees;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24818F901F31716300920673 /* Level.swift in Sources */,
+				24818F901F31716300920673 /* BFS.swift in Sources */,
 				24818F871F31649B00920673 /* main.swift in Sources */,
-				24818F8E1F316E4100920673 /* Tree.swift in Sources */,
+				24818F8E1F316E4100920673 /* DFS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
