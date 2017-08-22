@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class PRMapView: MKMapView {
 
@@ -18,4 +19,10 @@ class PRMapView: MKMapView {
     }
     */
 
+    let regionRadius:CLLocationDistance = 1000
+    
+    func centerMap(location: CLLocation) -> Void {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius*2, regionRadius*2)
+        self.setRegion(coordinateRegion, animated: true)
+    }
 }
